@@ -1,0 +1,252 @@
+
+<div class="mine_warp"> 
+  <!--头部-->
+  <div class="store_top" >
+    <div class="end" onclick="backPage()"  id="fs" ></div>
+     <span>我的订单</span>
+  </div>
+  <div class="myOrder_selectArea breadth mT bB">
+    <div class="myOrderOdd selectArea warp_Lt" id="myOrder"><div class="odd"></div>全部</div>
+    <div class="myOrderOdd  warp_Lt" id="pendingPayment">待付款</div>
+    <div class="myOrderOdd  warp_Lt" id="toBeShippedDetails">待发货</div>
+    <div class="myOrderOdd  warp_Lt" id="pendingReceipt">待收货</div>
+    <div class="myOrderOdd  warp_Lt" id="toBeEvaluated">待评价</div>
+  </div>
+  <!--全部-->
+  <div class="myOrder">
+    <div class="shoppingCart_wareArea">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >卖家已发货</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+               <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size:.9875rem">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn">付款</div>
+        <div class="settlementBtn warp_Rg">取消订单</div>
+      </div>
+    </div>
+    <div class="shoppingCart_wareArea">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >卖家已发货</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+              <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size: 15pt">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn">付款</div>
+        <div class="settlementBtn warp_Rg">取消订单</div>
+      </div>
+    </div>
+  </div>
+  <!--待付款-->
+  <div class="pendingPayment" style="display: none">
+    <div class="shoppingCart_wareArea">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="choose"></div>
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >等待买家付款</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails ui_btn" data-action="goInPayDetails" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+              <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_freight breadth bB">
+        <div class="soft"></div>
+        <p style="color: #333">运费险<span style="font-size: .875rem;" class="warp_Rg">¥0.00</span></p>
+        <p style="margin-top: 3px;">颜色分类：黑色<span class="warp_Rg">X1</span></p>
+      </div>
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size:.9875rem">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn">付款</div>
+        <div class="settlementBtn warp_Rg">取消订单</div>
+      </div>
+    </div>
+
+  </div>
+  <!--待发货-->
+  <div class="toBeShippedDetails"style="display: none">
+    <div class="shoppingCart_wareArea ">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >等待卖家发货</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails ui_btn" data-action="goInToBeShippedDetails" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+              <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_freight breadth bB">
+        <div class="soft"></div>
+        <p style="color: #333">运费险<span style="font-size: .875rem;" class="warp_Rg">¥0.00</span></p>
+        <p style="margin-top: 3px;">颜色分类：黑色<span class="warp_Rg">X1</span></p>
+      </div>
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size:.9875rem">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn">提醒发货</div>
+      </div>
+    </div>
+  </div>
+  <!--待收货-->
+  <div class="pendingReceipt"style="display: none">
+    <div class="shoppingCart_wareArea ">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >卖家已发货</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails ui_btn" data-action="goInPendingReceiptDetails" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+              <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_freight breadth bB">
+        <div class="soft"></div>
+        <p style="color: #333">运费险<span style="font-size: .875rem;" class="warp_Rg">¥0.00</span></p>
+        <p style="margin-top: 3px;">颜色分类：黑色<span class="warp_Rg">X1</span></p>
+      </div>
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size:.9875rem">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn">待收货</div>
+        <div class="settlementBtn warp_Rg ui_btn" data-action="goInViewLogistics">查看物流</div>
+      </div>
+    </div>
+
+  </div>
+  <!--待评价-->
+  <div class="toBeEvaluated"style="display: none">
+    <div class="shoppingCart_wareArea ">
+      <!--头部店铺选择-->
+      <div class="shoppingCart_wareStore">
+        <div class="shop"></div>
+        <span class="warp_Lt">店铺名</span>
+        <div class="quiet"></div>
+        <span class="warp_Rg myOrder_reveal" >交易成功</span> </div>
+      <!--商品属性展示区-->
+      <div class="shoppingCart_wareDetails ui_btn" data-action="goInEvaluated" style="height: 105px">
+        <div class="shoppingCart_wareDetailTxt">
+          <div class="print"></div>
+          <div class="shoppingCart_wareTxt">
+            <div class="myOrder_revealArea warp_Lt">
+              <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+              <span style="color: #cccccc;display: block">颜色分类：黑色</span>
+              <div class="myOrder_quality">七天包退</div>
+            </div>
+            <div class="myOrder_reverlAreaL warp_Rg">
+              <span style="color:#E60012">￥40.00</span>
+              <span style="text-decoration:line-through;">￥40.00</span>
+              <br/><br/>
+              <span>X1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--结算区-->
+      <div class="myOrder_freight breadth bB">
+        <div class="soft"></div>
+        <p style="color: #333">运费险<span style="font-size: .875rem;" class="warp_Rg">¥0.00</span></p>
+        <p style="margin-top: 3px;">颜色分类：黑色<span class="warp_Rg">X1</span></p>
+      </div>
+      <div class="myOrder_settlementArea breadth bB">共1件商品 合计：<span style="font-size:.9875rem">¥ 40.00</span>(含运费¥0.00)</div>
+      <div class="myOrder_settlementArea breadth" style="padding-top: 3px;height: 32px;">
+        <div class="settlementBtn warp_Rg changeBtn ui_btn" data-action="goInEvaluation">评价</div>
+        <div class="settlementBtn warp_Rg ui_btn" data-action="goInViewLogistics">查看物流</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

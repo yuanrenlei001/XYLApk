@@ -1,0 +1,85 @@
+
+<div class="mine_warp">
+    <!--头部-->
+    <div class="store_top" >
+        <div class="end"  id="fs" onclick="backPage()"></div>
+        <span>发表评价</span>
+    </div>
+    <!--评论区-->
+    <div class="evaluation_discuss mT bT">
+        <div class="cargoDrwaingArea breadth">
+            <div class="discuss_cargoDrawing warp_Lt fL"></div>
+            <textarea placeholder="请填写评论..." style=" width:calc(100% - 60px) ; height: 100%; float:left;"></textarea>
+            <!--<span>请填写评论~</span>-->
+        </div>
+        <div class="discuss_uploadMap breadth">
+            <div class="uploadMap warp_Lt">+</div>
+            <div class="uploadMap warp_Lt"></div>
+            <div class="uploadMap warp_Lt"></div>
+            <div class="uploadMap warp_Lt"></div>
+            <div class="uploadMap warp_Lt"></div>
+        </div>
+        <div class="discuss_uploadTxt bT">
+            <div class="uploadTxt warp_Lt">好评</div>
+            <div class="uploadTxt warp_Lt">中评</div>
+            <div class="uploadTxt warp_Lt">差评</div>
+            <div class="flower nice warp_Lt ui_btn " data-action="nice"></div>
+            <div class="flower centre warp_Lt ui_btn" data-action="centre"></div>
+            <div class="flower mistake warp_Lt ui_btn" data-action="mistake"></div>
+        </div>
+    </div>
+    <!--评分区-->
+    <div class="evaluationGrade breadth">
+        <p style="height:38px;padding-top: 10px;font-size: 1.125rem">店铺评价</p>
+        <div class="gradeTxt">
+            <span class="warp_Lt" style="margin-right: 60px;">描述相符</span>
+            <div class="love selectedLove warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+        </div>
+        <div class="gradeTxt">
+            <span class="warp_Lt" style="margin-right: 60px;">物流服务</span>
+            <div class="love selectedLove warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+        </div>
+        <div class="gradeTxt">
+            <span class="warp_Lt" style="margin-right: 60px;">服务态度</span>
+            <div class="love selectedLove warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+            <div class="love warp_Lt"></div>
+        </div>
+    </div>
+</div>
+
+<div class="evaluationFoot">
+    <div class="evaluationFoot_area warp_Rg">提交评论</div>
+</div>
+<!--<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>-->
+<!--<script type="text/javascript">-->
+    <!--$(document).ready(function(){-->
+        <!--$(".love").click(function(){-->
+            <!--if($(this).hasClass("selectedLove")){-->
+                <!--$(this).removeClass("selectedLove");-->
+                <!--$(this).nextAll(".love").removeClass("selectedLove");-->
+            <!--}else{-->
+                <!--$(this).prevAll(".love").addClass("selectedLove");-->
+                <!--$(this).addClass("selectedLove");-->
+            <!--}-->
+        <!--});-->
+        <!--$(".uploadMap:nth-child(1)").click(function(){-->
+            <!--var num=$(".discuss_uploadMap .uploadMap").length;-->
+            <!--if(num > 5){-->
+                <!--alert("你已超过上传图片数量的额度了！请删除几张");-->
+            <!--}else if(num = 5) {-->
+                <!--alert("你已达到上传图片数量的额度了！");-->
+            <!--}-->
+        <!--})-->
+    <!--})-->
+<!--</script>-->

@@ -1,0 +1,117 @@
+
+<div class="mine_warp">
+    <!--头部-->
+    <div class="store_top" >
+        <div class="end" onclick="backPage()" id="fs" ></div>
+        <span>确认订单</span>
+    </div>
+    <!--标题-->
+    <!--物流信息-->
+    <div class="orderDetails_logistics" style="margin-top: 50px;">
+        <div class="logisticsArea">
+            <p style="margin-bottom:4px;">收货人：<span class="warp_Rg" id="logisticsAreaName">方家强</span></p>
+            <span style="height: 20px;"class="warp_Lt">收货地址：</span><p>浙江省 杭州市 拱墅区 祥符街道 新文路 33-2号楼天堂e谷3号楼411</p>
+        </div>
+    </div>
+    <!--待收货-->
+    <div class="pendingReceipt">
+        <div class="shoppingCart_wareArea">
+            <!--头部店铺选择-->
+            <div class="shoppingCart_wareStore">
+                <div class="shop"></div>
+                <span class="warp_Lt">店铺名</span>
+                <div class="quiet"></div>
+                <span class="warp_Rg myOrder_reveal" >等待买家付款</span> </div>
+            <!--商品属性展示区-->
+            <div class="shoppingCart_wareDetails">
+                <div class="shoppingCart_wareDetailTxt">
+                    <div class="print"></div>
+                    <div class="shoppingCart_wareTxt">
+                        <div class="myOrder_revealArea warp_Lt">
+                            <span class="warp_lC" style="height: 30px;">控油极男水油平衡套装男士护肤品套装控油极男水油平衡套</span>
+                            <span style="color: #cccccc;display: block" id="colors"></span>
+                            <div class="myOrder_quality">七天包退</div>
+                        </div>
+                        <div class="myOrder_reverlAreaL warp_Rg">
+                            <span style="color:#E60012" id="monrys"></span>
+                            <span style="text-decoration:line-through;">￥400.00</span>
+                            <br/><br/>
+                            <span id="numss"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--结算区-->
+            <div class="myOrder_freight bB" style="padding-left: 10%;padding-right: 3%;color: #333">
+                <p>运费险<span style="font-size: .875rem;" class="warp_Rg">¥0.00</span></p>
+                <p style="margin-top: 3px;">实付（含运费）<span class="warp_Rg" style="color: #EB6100">￥<span style="font-size: .9375rem" id="shijiMoney"></span></span></p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="orderDetails_foot breadth bT">
+    <div style="float:left;">合计：<span id="sumMoney">1000.00</span></div>
+    <div class="footBtn warp_Rg selectfoot">立即付款</div>
+</div>
+<input type="text" value="" id="storeId" hidden="hidden">
+<input type="text" value="" id="productId" hidden="hidden">
+
+
+<div class="wantToRecharge_shady" style="display: none"></div>
+<div class="wantToRecharge_payment" style="display: none">
+    <!--头部-->
+    <div class="wantToRechargeHeader breadth bB">
+        <div class="end" id="backs"></div>
+        <div class="end" id="backss" style="display: none;"></div>
+        <span>付款详情</span>
+    </div>
+    <!--付款方式-->
+    <div class="wantToRechargePay " >
+        <div class="wantToRechargeChangeArea bB"  style="background-image: url('images/recharge/start.png');">
+            <span style="font-size: 16px;color: #333;">付款方式</span>
+            <span class="warp_Rg" style="font-size: .75rem;margin-right:12px">微信</span>
+        </div>
+        <div class="wantToRechargeChangeArea">
+            需付款
+        </div>
+        <div class="withdraw_btn ui_btn"style="margin-top: 85px;" data-action="payFor">确认付款</div>
+    </div>
+    <!--支付选项-->
+    <div class="wantToRechargeChange bB" style="display: none" id="sdasda">
+        <div class="wantToRechargeChangeArea bB selecteds">
+            <div class="ChangeArea_btn warp_Lt"></div>
+            <span>微信</span>
+        </div>
+        <div class="wantToRechargeChangeArea bB ">
+            <div class="ChangeArea_btn warp_Lt"></div>
+            <span>支付宝</span>
+        </div>
+        <div class="wantToRechargeChangeArea bB ">
+            <div class="ChangeArea_btn warp_Lt"></div>
+            <span>中国工商银行储蓄卡（3212）</span>
+        </div>
+        <div class="wantToRechargeChangeArea bB changeSel ui_btn" data-action="goInBankCard">
+            <div class="ChangeArea_btn warp_Lt" ></div>
+            <span>添加银行卡付款</span>
+        </div>
+        <div class="wantToRechargeChangeArea wantToRecharge_balance " id="yue">
+            <div class="ChangeArea_btn warp_Lt" style="margin-top: 9px;"></div>
+            <span>账户余额</span>
+            <span style="color: #ccc;font-size: .75rem">余额10000</span>
+        </div>
+    </div>
+</div>
+
+<div style="position: fixed;top:0;left:0;width:100%;height:100%;background: #fff;z-index: -1;"></div>
+
+<div id="payFixed" style="position: fixed;top:0;left:0;width:100%;height:100%;z-index: 999999;background: rgba(0,0,0,.5);display: none;">
+    <label style="display: block;
+    width: 100%;
+    height: 50px;
+    color: #fff;text-align: center;margin-top: 50%;">请输入你的密码：<input type="password" value="" id="passwords"></label>
+
+
+    <div id="paySuccess" class="ui_btn" data-action="paySuccess" style="width:50px;height:50px;margin: auto;color: red;text-align: center;line-height: 50px;background:#fff;">确认支付</div>
+</div>

@@ -1,0 +1,96 @@
+
+	<div class="top">
+		<div class="return" onclick="backPage()"></div>
+		我的金豆
+	</div>
+
+	<div class="position" style=" height: 44px;"></div>
+
+	<div class="rechargeType">
+		<div class="typeBox">
+			<div class="pic"><img src="images/mine/ticket.png"></div>
+			<div class="number">0张</div>
+			<div class="name">便付券</div>
+			<div class="operation"><span class="fL ui_btn" data-action="zhuanzheng">转赠</span><span class="fR ui_btn" data-action="lookup">查看</span></div>
+		</div>
+		<div class="miLine"></div>
+		<div class="typeBox">
+			<div class="pic"><img src="images/mine/ImazamoxT.png"></div>
+			<div class="number">0颗</div>
+			<div class="name">我的金豆</div>
+			<div class="operation ui_btn" data-action="exchange">兑换</div>
+		</div>
+	</div>
+
+
+	<div class="rechargeMoney">
+		<div class="miHint">金额</div>
+		<div class="import">
+			<input type="number" id="miRecharge" name="" placeholder="请输入金额">
+		</div>
+	</div>
+
+	<div class="rechargebtn ui_btn" data-action="handsel">我要充值</div>
+
+
+
+	<!-- 充值方式 -->
+	<div class="rechargeMode">
+		<div class="title">充值方式</div>
+
+		<div class="mode">
+			<div class="miLogo">
+				<img src="images/mine/wx.png">
+			</div>
+			<div class="name">微信充值</div>
+		</div>
+
+		<div class="mode">
+			<div class="miLogo">
+				<img src="images/mine/zfb.png">
+			</div>
+			<div class="name">支付宝充值</div>
+		</div>
+
+		<div class="mode ui_btn" data-action="yuE">
+			<div class="miLogo">
+				<img src="images/mine/zhye.png">
+			</div>
+			<div class="name">账户余额充值</div>
+		</div>
+
+
+		<div class="rechargeCancel ui_btn" data-action="cancel_no">取消</div>
+
+	</div>
+
+
+	<!-- 转赠 -->
+	<div class="donation">
+		<div class="donationIn">
+			<input type="text" name="" placeholder="赠送人账号">
+		</div>
+
+		<div class="donationIn">
+			<input type="number" name="" placeholder="赠送数量">
+		</div>
+
+		<div class="miCancel ui_btn" data-action="cancel" >取消</div>
+		<div class="confirm">赠送</div>
+	</div>
+
+
+	<!-- 遮罩 -->
+	<div class="miMask ui_btn" data-action="cancel_no"></div>
+
+	<!--<script src="js/tool/jquery-1.11.3.min.js"></script>-->
+	<!--<script src="js/tool/aggregate.js"></script>-->
+	<!--<script src="js/tong_js.js"></script>-->
+
+<div id="shopRoleDist" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.3);display: none;">
+	<div style="text-align: center;margin-top: 150px;"><img src="images/mine/niu.png" style="width:210px;height:210px;" alt=""></div>
+	<div style="position: relative;margin: auto;text-align: center;">
+		<div data-id="2" style="display: inline-block;width:140px;height:40px;background:#f1c330;color: #fff;border-radius: 8px;text-align: center;line-height: 40px;font-size: 14px;margin: 0 5%; ">成为创客：100元</div>
+		<div data-id="3" style="display: inline-block;width:140px;height:40px;background:#f1c330;color: #fff;border-radius: 8px;text-align: center;line-height: 40px;font-size: 14px;margin: 0 5%; ">成为创客商：5000元</div>
+	</div>
+</div>
